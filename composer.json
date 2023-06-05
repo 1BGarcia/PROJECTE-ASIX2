@@ -1,0 +1,6 @@
+{
+    "name": "vendor-root/html",
+    "require": {
+        "badcow/dns": "^0.19.0"
+    }
+}

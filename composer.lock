@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "096c0d544d49d8bcc7639c48943b6d40",
+    "packages": [
+        {
+            "name": "badcow/dns",
+            "version": "v0.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Badcow/DNS.git",
+                "reference": "40e48e588897a7f79d09837cff08cfa6861c54de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Badcow/DNS/zipball/40e48e588897a7f79d09837cff08cfa6861c54de",
+                "reference": "40e48e588897a7f79d09837cff08cfa6861c54de",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "badcow/common": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Badcow\\DNS\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Sam Williams",
+                    "email": "sam@badcow.co"
+                }
+            ],
+            "description": "A PHP library for creating DNS zone files based on RFC1035",
+            "support": {
+                "issues": "https://github.com/Badcow/DNS/issues",
+                "source": "https://github.com/Badcow/DNS/tree/master"
+            },
+            "time": "2017-01-25T08:13:59+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

@@ -1,0 +1,49 @@
+{
+    "packages": [
+        {
+            "name": "badcow/dns",
+            "version": "v0.19",
+            "version_normalized": "0.19.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Badcow/DNS.git",
+                "reference": "40e48e588897a7f79d09837cff08cfa6861c54de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Badcow/DNS/zipball/40e48e588897a7f79d09837cff08cfa6861c54de",
+                "reference": "40e48e588897a7f79d09837cff08cfa6861c54de",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "badcow/common": "dev-master"
+            },
+            "time": "2017-01-25T08:13:59+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Badcow\\DNS\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Sam Williams",
+                    "email": "sam@badcow.co"
+                }
+            ],
+            "description": "A PHP library for creating DNS zone files based on RFC1035",
+            "support": {
+                "issues": "https://github.com/Badcow/DNS/issues",
+                "source": "https://github.com/Badcow/DNS/tree/master"
+            },
+            "install-path": "../badcow/dns"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

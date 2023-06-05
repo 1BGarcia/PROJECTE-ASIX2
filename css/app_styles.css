@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+    /* min-height: 100px; */
+    /* height: 80vh; */
+}
+
+footer{
+    grid-area: footer;
+}
+
+textarea {
+    resize: none;
+}
+
+/* HEADER STYLES */
+
+/* header a{
+    padding: 20px;
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+header a:hover{
+    background-color: #3D3A3A;
+    cursor: pointer;
+} */
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #807373;
+    width: 100%;
+}
+  
+header ul li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+header ul li:last-child {
+    border-right: none;
+}
+
+header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color: #04AA6D;
+}
+
+/* MAIN START PAGE */
+.main_page{
+    padding: 40px;
+}
+
+.main_page h1{
+    margin-bottom: 20px;
+}
+
+.main_page p{
+    text-align: justify;
+}
+
+.main_page .button{
+    margin-top:50px;
+}
+
+.main_page .button a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #3D3A3A;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main_page .button a:hover{
+    background-color: #807373;
+}
+
+/* MAIN CONTROL PANEL CONTENT STYLE */
+.control_panel{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "adm-panel-menu adm-panel-data";
+}
+
+.control-panel-menu{
+    grid-area: adm-panel-menu;
+    padding: 0px 70px 0px 70px;
+}
+
+.control-panel-menu a, .control-panel-data div a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #3D3A3A;
+    color: #FFF;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.control-panel-menu a:first-child{
+    margin-top: 80px;
+}
+
+.control-panel-menu a:hover, .control-panel-data div a:hover{
+    background-color: #807373;
+}
+
+.control-panel-data div a{
+    width: 30%;
+    margin: 0;
+}
+
+.control-panel-data{
+    grid-area: adm-panel-data;
+    padding: 0px 70px 0px 70px;
+    margin-top: 80px;
+}
+
+.control-panel-data ul{
+    list-style: none;
+    border: #000 solid 1px;
+    padding: 5px;
+    height: 50vh;
+    margin-top: 20px;
+}
+
+.control-panel-data ul{
+    overflow: auto;
+    max-height: 50vh;
+}
+
+.control-panel-data ul a{
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+}
+
+.control-panel-data ul a li{
+    background-color: #E9E7E7;
+    padding: 15px;
+}
+
+.control-panel-data ul a li:hover{
+    background-color: #A0A0A0;
+}
+
+/* MAIN EDIT PAGE */
+
+.form-edit-container{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.left-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.left-container{
+    padding: 0px 50px 0px 50px;
+    border-right: 1px solid black;
+}
+
+
+.left-container div{
+    margin-bottom: 30px;
+}
+
+.left-container div span{
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.left-container div span::first-letter{
+    transform: uppercase;
+}
+
+.status-container{
+    margin-top: 20px;
+    display: flex;
+}
+
+.status-user-true{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 50px;
+}
+
+.status-user-false{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 50px;
+}
+
+.left-container a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #3D3A3A;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 20px 20px 0px;
+    width: 300px;
+}
+
+.left-container a:hover{
+    background-color: #807373;
+    cursor: pointer;
+}
+
+.right-container{
+    margin-right: 20px;
+    padding-left: 50px;
+}
+
+
+/* MAIN LOGIN FORM */
+.login-form{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.login-form form{
+    width: 30%;
+}
+
+
+/* MAIN ADD OBJECT FORM */
+.add-form{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.add-form form{
+    width: 30%;
+}
+
+.add-form-policy{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.add-form-policy form{
+    width: 50%;
+}
+
+
+/* MAIN REGISTER FORM */
+
+.register-form{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.register-form form{
+    width: 30%;
+}
+
+/* GENERAL MAIN FORM */
+
+.form_data{
+    margin: 30px;
+}
+
+.form_data input[type="text"],
+.form_data input[type="email"],
+.form_data input[type="number"],
+.form_data input[type="password"],
+.form_data select,
+.form_data textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form_data input[type="submit"],
+.form_data input[type="reset"] {
+    padding: 10px;
+    background-color: #3D3A3A;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 20px 20px 0px;
+    width: 30%;
+}
+
+.form_data input[type="submit"]:hover,
+.form_data input[type="reset"]:hover {
+    background-color: #807373;
+    cursor: pointer;
+}
+
+.form_data input[type="file"] {
+    margin-top: 5px;
+    }
+    
+    .form_data input[type="file"]::-webkit-file-upload-button {
+    background-color: #3D3A3A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    }
+    
+    .form_data input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #807373;
+    }
+    
+/* FOOTER STYLES */
+
+footer{
+    background-color: #807373;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/*  ADMINISTRADOR WEB  */
+
+/* ul.tree{
+    margin-top: 20px;
+} */
+
+div.control_web ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+div.control_web ul.tree li {
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+}
+
+div.control_web ul.tree li::before {
+    content: "";
+    position: absolute;
+    top: -0.5em;
+    left: -20px;
+    width: 1px;
+    height: 1em;
+    border-left: 1px solid #ccc;
+}
+
+div.control_web ul.tree li::after {
+    content: "";
+    position: absolute;
+    top: -0.5em;
+    left: -8px;
+    width: 8px;
+    height: 0.5em;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    transform: rotate(-45deg);
+}
+
+#webserv-panel{
+    border-top:solid 1px black;
+    width: 100%;
+    padding: 5px;
+    margin: 50px 10px 10px 10px;
+}
+
+div.control_web h3{
+    margin-bottom: 10px;
+}
+
+.control_web_sup{
+    display: flex;
+    justify-content: center;
+}
+
+div.control_web{
+    width: 30%;
+}
+
+/*  */
